@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="438.0" style="-fx-background-color: #a7b7af;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cek.sehat.UtamaController">
+   <children>
+      <Label layoutX="114.0" layoutY="37.0" prefHeight="37.0" prefWidth="210.0" text="Pengecekan Kesehatan">
+         <font>
+            <Font name="Lucida Bright Demibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="74.0" prefHeight="27.0" prefWidth="65.0" text="Nama" />
+      <Label layoutX="51.0" layoutY="101.0" prefHeight="27.0" prefWidth="65.0" text="Tinggi" />
+      <Label layoutX="51.0" layoutY="128.0" prefHeight="27.0" prefWidth="65.0" text="Berat Badan" />
+      <Label layoutX="51.0" layoutY="155.0" prefHeight="27.0" prefWidth="88.0" text="Jenis Kelamin" />
+      <RadioButton fx:id="L" layoutX="170.0" layoutY="160.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="81.0" text="Laki-Laki" />
+      <RadioButton fx:id="P" layoutX="170.0" layoutY="182.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="103.0" text="Perempuan" />
+      <JFXTextField fx:id="beratbadan" layoutX="159.0" layoutY="126.0" maxWidth="225.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" />
+      <JFXTextField fx:id="tinggi" layoutX="159.0" layoutY="99.0" maxWidth="225.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" />
+      <JFXTextField fx:id="nama" layoutX="159.0" layoutY="72.0" maxWidth="225.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" />
+      <JFXButton fx:id="prosess" defaultButton="true" layoutX="134.0" layoutY="214.0" onAction="#proses" text="Proses">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="resett" defaultButton="true" layoutX="244.0" layoutY="214.0" onAction="#reset" text="Reset">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <Label layoutX="51.0" layoutY="249.0" prefHeight="27.0" prefWidth="103.0" text="Berat Ideal Anda" />
+      <TextField fx:id="ideal" layoutX="171.0" layoutY="250.0" prefHeight="25.0" prefWidth="88.0" />
+      <Label layoutX="272.0" layoutY="254.0" text="Kg" />
+      <Label layoutX="51.0" layoutY="291.0" prefHeight="27.0" prefWidth="158.0" text="Hasil Analisa Kesehatan" />
+      <TextField fx:id="analisa" layoutX="51.0" layoutY="336.0" prefHeight="58.0" prefWidth="358.0" />
+      <TextField fx:id="saran" layoutX="51.0" layoutY="419.0" prefHeight="58.0" prefWidth="358.0" />
+   </children>
+</Pane>
